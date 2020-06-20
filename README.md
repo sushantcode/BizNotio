@@ -72,7 +72,15 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Chowdhury, Lamia** - *Core Team Member* - [Profile](https://github.com/Lamiachowdhury)
+
+* **Gupta, Sushant** - *Core Team Member* - [Profile](https://github.com/sushantcode)
+
+* **Padilla, Jonathan** - *Core Team Member* - [Profile](https://github.com/jonathanpv)
+
+* **Parajuli, Sindhu** - *Core Team Member* - [Profile](https://github.com/Sindhu-Parajuli)
+
+
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
