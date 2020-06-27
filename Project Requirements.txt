@@ -1,0 +1,36 @@
+CSE 3310 – Summer 2020
+Instructor: Rodrigo dos Santos
+Group #: 2
+Group Members: Lamia Chowdhury, Sindhu Parajuli, Sushant Gupta, Jonathan Padilla
+
+Work Title: BizNotio
+
+
+Work Description:
+Project – To develop an android application to help connect investors and investees. This will be a platform where a person can find investor to fund his/her ideas or business.  Investors are always looking for promising ideas which can change the world, here in this app we can help people connect. The app will make money by receiving commission if funding is received by the investee. The categories of ideas will be ordered and displayed as icons. The system will include the following components: 
+ 
+* Create a sign up/log in and registration for both investee and investors. 
+* Create a profile on the app for both investor and investee, with email, contact info, interests. The profile should be able to tell story about the investee so that it stands out. It should list the category in which the investee is looking for investors and for the investors it should reveal what kind of investments capital, ideas they are looking for.  
+* There will be notifications in case of new message, or a profile being liked. 
+* There could be a like/love button on the profile which will let the person know if the investor is interested in listening the details if they find the story interesting. 
+* There will be an option to chat with between the investor and the person to explain the ideas. 
+* Option to set up an appointment (If possible, add a video call option) 
+* Could cancel/reschedule appointment 
+* A minimum business case: goals, costs, schedule, restrictions, assumptions, etc.; 
+* Upload of images / recorded videos talking about the project. This is the part where the investees talk in person to the investors / showcase their project. 
+* Could fund money through the app (Handling transactions) 
+* On finding an investor, the investee must provide some percentage to the app which made it possible. 
+* Can have option to buy ideas from people or invest. 
+* Both investors and investee could search each other from categories listed in a profile such as, tech, small business, startups, etc. 
+* Could rate the investor/investee.
+
+
+Weekly Meeting Times: Friday & Sunday 7-8pm
+
+
+Iteration Leaders:
+	- Iteration #1: Lamia Chowdhury
+	- Iteration #2: Sushant Gupta
+	- Iteration #3: Sindhu Parajuli
+	- Iteration #4: Jonathan Padilla
+
