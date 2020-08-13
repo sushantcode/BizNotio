@@ -1,6 +1,15 @@
 # BizNotio
 An app to connect investees to investor
 
+### Features
+* Realtime chatting 
+* Peer-to-peer video calling
+* Create startup posts
+* Send payments to users
+* Search Users with account types
+* Maintain Account
+
+
 ## Getting Started
 
 
@@ -10,65 +19,113 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
+IntelliJ Ultimate 2020.2
+Java 1.8 SDK
+
+Dependencies are below:
+
+build.gradle
 ```
-Give examples
+    // Glide and picasso is used, we provided examples on how to use either library
+    // to load images from a url
+    def glide_version = "4.8.0"
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
+
+    // Circle image view crop dependency from another github
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // groupie recycler view helper dependency used for logical placement of items in recycler view
+    def groupie_version = "2.8.1"
+    implementation "com.xwray:groupie:$groupie_version"
+
+    def picasso_version = "2.71828"
+    implementation "com.squareup.picasso:picasso:$picasso_version"
+
+    // Both ViewModels and LiveData are used for passing data between fragments and activities
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
+    // Twilio is used for video calling
+    implementation "com.twilio:audioswitch:0.1.5"
+    implementation "com.twilio:video-android:5.9.0"
+
+
+    implementation "com.android.support.constraint:constraint-layout:1.1.3"
+    implementation "com.koushikdutta.ion:ion:2.1.8"
+    
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+To install the application, check out the releases tab on the Github repo. This should be a simple APK 
+that you can install directly to the phone. Since this APK will have our database connected, you won't 
+need to deploy your own Firebase project or Node.js server to run the application. If you do want 
+to build from source you will need to launch your own Firebase app and connect it to Android, you will
+also have to launch your own server to handle token authorization for the Twilio programmable video SDK.
 
-Say what the step will be
 
+Steps to build from source:
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+Open IntelliJ and select new project from existing source 
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+![Quick-build-tutorial](source_biznotio_build_tutorial.gif)
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+On URL put this link
+```
+https://github.com/Sindhu-Parajuli/BizNotio2.git
+```
+![IntelliJ clone repo](https://i.ibb.co/ScYQhk2/image.png)
 
 ```
-Give an example
+Wait for the gradle sync to finish. Press build on top portion of screen
+```
+Copy these two lines in `temp.txt`
+```
+TWILIO_ACCESS_TOKEN_SERVER=https://citrine-speckled-recess.glitch.me/
+USE_TOKEN_SERVER=true
+```
+to `local.properties`
+
+```
+You will have a running app but if you want your own database follow the instructions below! 
 ```
 
-### And coding style tests
+### Set up the backend
+[Create a Firebase project and link it to your clone](https://firebase.google.com/docs/android/setup)
 
-Explain what these tests test and why
+[Follow this tutorial for Twilio programmable voice](https://github.com/twilio/video-quickstart-android)
 
-```
-Give an example
-```
+[Launch the Node.js server for token authorization](https://github.com/TwilioDevEd/video-access-token-server-node)
 
-## Deployment
+That's all you need to do for the backend! 
 
-Add additional notes about how to deploy this on a live system
+### Back to IntelliJ
+Run the app on your emulator from AVD Manager or use your phone
+Instructions on testing the app on your phone can be found here:
+
+[Android Developers Guide](https://developer.android.com/studio/run/device)
+
+
+Now after you hook up the backend credentials to your clone
+you will have a fully functioning Biznotio app! 😎✨🎉
+
+## Demo
+![Quick-demo-gif](source.gif)
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Figma](http://www.figma.com/) - Design and prototyping tool 
+* [Kotlin](https://kotlinlang.org/) - Google's preferred language for Android app development
+* [Jetpack](https://developer.android.com/jetpack/) - UI management and creation
+* [Twilio](https://www.twilio.com/docs/video/) - Used for video calling feature
+* [Firebase](https://firebase.google.com/) - Powerful, world-class infrastructure for mobile apps
+
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+If you would like to contribute, make a pull request to have it reviewed by one of us.
 
 ## Authors
 
@@ -80,9 +137,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 * **Parajuli, Sindhu** - *Core Team Member* - [Profile](https://github.com/Sindhu-Parajuli)
 
-
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+Any contributors will be added to this list 😁
 
 ## License
 
@@ -91,5 +146,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* This project was for the Software Engineering course, CSE 3310, under [Professor Rodrigo Augusto Dos Santos](https://mentis.uta.edu/explore/profile/rodrigo-augusto-silva-dos-santos) 
+* Thank you for visiting 🎉
