@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:tools="http://schemas.android.com/tools"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_margin="8dp"
+
+                                   android:id="@+id/cardViewPost">
+
+
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent" android:background="#F5F9FA">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/tVName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                tools:text="Name"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold" android:background="#EBF8FA"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tVRelativeTime"
+                tools:text="4 minutes ago"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tVProposalTitle"
+                tools:text="Title"
+                android:layout_marginTop="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tVProposalType"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                tools:text="Type"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tVMinCase"
+                tools:text="MiniMum Case"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tVDescription"
+                tools:text="Give description"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18sp"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal" tools:srcCompat="@tools:sample/backgrounds/scenic"
+                android:layout_marginTop="10dp"
+                android:id="@+id/iVPostImg" android:scaleType="centerCrop"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/justBlank"
+                android:background="@color/card_background"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+

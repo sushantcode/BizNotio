@@ -1,0 +1,40 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:andriod="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:id="@+id/constraintLayout"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context="Fragments.SearchFragment">
+
+
+    <androidx.appcompat.widget.Toolbar android:layout_width="0dp"
+                                       android:layout_height="42dp"
+                                       android:background="#F5F6FD"
+                                       andriod:layout_constraintBottom_toBottomOf="parent"
+                                       andriod:layout_constraintTop_toTopOf="parent"
+                                       andriod:layout_constraintEnd_toEndOf="parent"
+                                       andriod:layout_constraintStart_toStartOf="parent"
+                                       andriod:layout_constraintHorizontal_bias="0.0"
+                                       andriod:layout_constraintVertical_bias="0.004" android:id="@+id/toolbar">
+
+        <ImageView android:layout_width="30dp" android:layout_height="30dp"
+                   android:id="@+id/iconforimage" android:src="@drawable/search"/>
+
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/searchView"
+                  android:hint="Search for users by account type.."/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            andriod:layout_constraintEnd_toEndOf="parent"
+            andriod:layout_constraintStart_toStartOf="parent" andriod:layout_constraintBottom_toBottomOf="parent"
+            andriod:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

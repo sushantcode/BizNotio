@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1079040159034",
+    "firebase_url": "https://bitnoti0.firebaseio.com",
+    "project_id": "bitnoti0",
+    "storage_bucket": "bitnoti0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079040159034:android:5f632fa926c780c33af403",
+        "android_client_info": {
+          "package_name": "com.example.biznoti0"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079040159034-5pm4rdlg3fr078augug8p1d0qnqk118a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYIicDaKKSBX5UPlLA3ookns-0AQUtFjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079040159034-5pm4rdlg3fr078augug8p1d0qnqk118a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

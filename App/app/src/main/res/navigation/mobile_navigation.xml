@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- this is the root node of the navigation graph -->
+  <navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/navigation_home">
+    <!-- the above app:startDestination specifies what will be launched by default when the user opens the app  -->
+    <!-- below are fragments (from res/layout) the navigation flow will be made using the fragments added to this file  -->
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="Fragments.HomepageFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_homepage">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_create"
+        android:name="Fragments.CreatePost"
+        android:label="fragment_create_post"
+        tools:layout="@layout/fragment_create_post" />
+
+    <fragment
+        android:id="@+id/navigation_notification"
+        android:name="Fragments.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="Fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="Fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+
+    <activity
+        android:id="@+id/signInActivity"
+        android:name="com.example.biznoti0.SignInActivity"
+        android:label="activity_sign_in"
+        tools:layout="@layout/activity_sign_in" />
+
+    <activity
+        android:id="@+id/signUp"
+        android:name="com.example.biznoti0.SignUp"
+        android:label="activity_sign_up"
+        tools:layout="@layout/activity_sign_up" />
+
+    <activity
+      android:id="@+id/settingActivity"
+      android:name="com.example.biznoti0.SettingActivity"
+      android:label="activity_setting"
+      tools:layout="@layout/activity_setting" />
+
+    <activity
+      android:id="@+id/passwordResetActivity"
+      android:name="com.example.biznoti0.passwordResetActivity"
+      android:label="activity_password_reset"
+      tools:layout="@layout/activity_password_reset" />
+
+  <activity
+          android:id="@+id/Payment"
+          android:name="com.example.biznoti0.Payment"
+          android:label="activity_payment"
+          tools:layout="@layout/activity_payment" />
+  <fragment
+      android:id="@+id/chatListFragment"
+      android:name="Fragments.ChatListFragment"
+      android:label="fragment_chat_list"
+      tools:layout="@layout/fragment_chat_list" />
+  <fragment
+          android:id="@+id/appointmentSelectUser"
+          android:name="Fragments.AppointmentSelectUserFragment"
+          android:label="fragment_appointment_select_user"
+          tools:layout="@layout/fragment_appointment_select_user" />
+
+  <fragment
+          android:id="@+id/chatNewMessageFragment"
+          android:name="Fragments.ChatNewMessageFragment"
+          android:label="fragment_chat_new_message"
+          tools:layout="@layout/fragment_chat_new_message" />
+
+  <fragment
+          android:id="@+id/chatLogFragment"
+          android:name="Fragments.ChatLogFragment"
+          android:label="fragment"
+          tools:layout="@layout/fragment_chat_log" />
+
+  <fragment
+          android:id="@+id/appointmentSetup"
+          android:name="Fragments.AppointmentSetupFragment"
+          android:label="fragment_appointSetup"
+          tools:layout="@layout/fragment_appointment_setup" />
+  <activity
+          android:id="@+id/Addpost"
+          android:name="com.example.biznoti0.AddPost"
+          android:label="activity_addpost"
+          tools:layout="@layout/activity_add_post"  />
+
+  <activity
+          android:id="@+id/Rating"
+          android:name="com.example.biznoti0.Rating"
+          android:label="activity_rating"
+          tools:layout="@layout/activity_rating"  />
+
+  <activity
+          android:id="@+id/videoCallActivity"
+          android:name="com.example.biznoti0.VideoActivity"
+          android:label="activity_password_reset"
+           />
+  <activity
+          android:id="@+id/videoSettingsActivity"
+          android:name="com.example.biznoti0.SettingsActivity"
+          android:label="activity_password_reset"
+          tools:layout="@layout/activity_video" />
+
+</navigation>

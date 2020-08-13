@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools" android:id="@+id/Proposal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#3F90B5" android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="1dp"
+            android:text="Create Proposal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toTopOf="@+id/ProposalName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+            android:id="@+id/ProposalName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="     Proposal Name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" tools:layout_editor_absoluteY="65dp"
+            android:layout_marginTop="10dp"/>
+    <EditText
+            android:id="@+id/ProposalType"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="    Proposal Type"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.389" tools:layout_editor_absoluteY="130dp"
+            android:layout_marginTop="8dp"/>
+    <EditText
+            android:id="@+id/ProposalDescription"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="    Description"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" tools:layout_editor_absoluteY="193dp"
+            android:layout_marginTop="8dp"/>
+
+    <EditText
+            android:id="@+id/MinimumCase"
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="   Minimum Business Case: goals, costs, schedule,   restrictions, assumptions, etc."
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" tools:layout_editor_absoluteY="357dp"
+            android:layout_marginTop="8dp"/>
+    <Button
+            android:text="Upload file"
+            android:layout_width="134dp"
+            android:layout_height="40dp" android:id="@+id/select"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            tools:layout_editor_absoluteY="541dp" android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"/>
+    <Button
+            android:id="@+id/CreatePost"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="#00B0FF"
+            android:text="Post"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="634dp" android:layout_marginTop="20dp"/>
+</LinearLayout>

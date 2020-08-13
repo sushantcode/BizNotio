@@ -1,0 +1,77 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentChatListId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragments.ChatListFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="111dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/chats"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:alpha="0.9"
+            android:fontFamily="@font/space_mono"
+            android:freezesText="false"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0sp"
+            android:text="@string/chats"
+            android:textAppearance="@style/chats"
+            android:typeface="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/search_button"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="36dp"
+        android:alpha="0.9"
+        android:background="@drawable/chat_ui_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"/>
+
+
+    <RelativeLayout
+        android:id="@+id/appointment_button"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="24dp"
+        android:alpha="0.9"
+        android:background="@drawable/ic_calendar"
+        app:layout_constraintEnd_toStartOf="@+id/search_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chat_list_recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="100dp"
+            android:overScrollMode="ifContentScrolls"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/layout_chat_list_element"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".AddPost" android:id="@+id/frameLayout"
+              android:background="@android:color/background_light">
+
+
+    <ImageView
+            android:id="@+id/image_view"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_broken_image_24"
+            android:layout_width="400dp"
+            android:layout_height="400dp" />
+
+
+    <Button
+            android:text="Choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/choose"
+    />
+
+
+    <Button
+            android:text="Upload Image"
+            android:layout_width="158dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:id="@+id/image"/>
+
+
+</LinearLayout>

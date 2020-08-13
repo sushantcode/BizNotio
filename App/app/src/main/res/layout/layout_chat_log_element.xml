@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       app:cardElevation="0dp"
+       app:cardCornerRadius="2dp"
+       app:cardPreventCornerOverlap="false"
+       app:cardUseCompatPadding="true"
+       android:layout_marginBottom="40dp"
+       android:clickable="true"
+       android:foreground="?android:attr/selectableItemBackground"
+       android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/chat_log_layout"
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:paddingHorizontal="36dp">
+
+        <ImageView
+                android:id="@+id/chat_log_element_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/profile"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/chat_log_element_user_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+                android:id="@+id/chat_log_element_message_preview"
+                android:layout_width="239dp"
+                android:layout_height="22dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginBottom="2dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/space_mono"
+                android:gravity="start|top"
+                android:text="@string/must_go_tal"
+                android:textAppearance="@style/must_go_tal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+                android:id="@+id/chat_log_element_user_name"
+                android:layout_width="102dp"
+                android:layout_height="22dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="55dp"
+                android:alpha="0.7"
+                android:fontFamily="@font/space_mono"
+                android:gravity="bottom"
+                android:text="@string/julia_semid"
+                android:textAppearance="@style/julia_semid"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        <!-- time -->
+        <TextView
+                android:id="@+id/chat_log_time"
+                android:layout_width="41dp"
+                android:layout_height="19dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="2dp"
+                android:alpha="0.4"
+                android:fontFamily="@font/space_mono"
+                android:text="@string/some_id"
+                android:textAppearance="@style/some_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/chat_log_element_image_circle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:layout_constraintBottom_toBottomOf="@+id/chat_log_element_image"
+                app:layout_constraintEnd_toEndOf="@+id/chat_log_element_image"
+                app:layout_constraintStart_toStartOf="@+id/chat_log_element_image"
+                app:layout_constraintTop_toTopOf="@+id/chat_log_element_image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
